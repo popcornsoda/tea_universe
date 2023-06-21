@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Playfair+Display&family=Roboto&display=swap');
+
+body {
+    font-family: Playfair Display, sans-serif;
+    font-size: 19px;
+    line-height: 30px;
+    /* letter-spacing: 3px; */
+    background: #d8bfc5;
+    color: #000;
+    margin-bottom: 15px;
+
+}
+
+.info {
+    margin: 5px 0;
+}
+.info h1 {
+    padding: 10px;
+    margin-bottom: 10px;
+}
+.info-text p {
+    color: #1a2135;
+    margin: 0;
+    
+}
+
+.info-text {
+    display: inline-block;
+    box-sizing: border-box;
+    width: 42%;
+    margin-left: 40px;
+}
+.info-text p, .info-text a{
+    padding: 2px;
+}
+.info-text h2 {
+    display: inline-block;
+    box-sizing: border-box;
+    
+}
+.avatar {
+    display: inline-block;
+    box-sizing: border-box;
+    width: 50%;
+    padding: 5px;
+}
+
+.avatar {
+    width: 400px;
+    border-radius: 10px;
+    box-shadow: 4px 4px 14px rgba(0, 0, 0, 0.25);
+}
+.list {
+    border: #c1c283;
+    border-left: 20px  solid #d4b569;
+    border-radius: 10px;
+    background: #c1c283;
+    padding: 7px;
+    margin: 5px;
+}
+.table {
+    border-left: 20px #c1c283 solid;
+    background: darkolivegreen;
+    border-radius: 10px;
+
+}
+.contact {
+    border-left: 20px rgb(115, 156, 52) solid;
+    border-radius: 10px;
+    background: #d4b569;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+.container {
+    max-width: 1000px;
+    margin: auto;
+
+}
+.info, .table, .contact {
+    padding: 8px;
+    margin: 5px;
+
+}
+.btn {
+    background: black;
+    color: azure;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 10px;
+    font-family: inherit;
+    font-size: 13px;
+}
+.btn:hover {
+    color: slateblue;
+    opacity: 0.8;
+}
+.btn:active {
+    color: chartreuse;
+}
+a {
+    text-decoration: none;
+}
+a:hover {
+    color: forestgreen;
+    font-size: 1.5rem;
+    text-decoration: underline;
+}
+a:visited {
+    color: rgb(63, 10, 112);
+}
+.list li {
+    border-bottom: 4px solid gainsboro;
+    padding-left: 4px;
+}
+.table td{
+    padding-left: 4px;
+}
+.table tbody tr:hover {
+    background: #c1c283;
+}
+.table table thead:nth-child(n) {
+    background:rgb(167, 194, 95)
+}
+.block label {
+    display: block;
+    margin-top: 10px;
+}
+.block input, .block textarea  {
+    box-sizing: border-box;
+    width: 100%;
+    background: transparent;
+    border: none;
+    border-bottom: 2px solid gray;
+    color: #000;
+    outline: none;
+}
+.block_line .block {
+    display: inline-block;
+    margin-right: 10px;
+    width: calc(50% - 10px);
+}
+.block_line .block:last-child{
+    margin-right: 0;
+}
+
+@media (max-width:790px) {
+    .info {
+        font-size: 14px;
+        line-height: 20px;
+        text-align: center;
+    }
+}
+@media (max-width:650px) {
+    .block_line .block {
+        display: block;
+        width: 100%;
+    }
+}
